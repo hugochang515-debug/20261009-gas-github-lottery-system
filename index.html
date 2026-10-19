@@ -79,15 +79,22 @@
           <div id="draw-warning" class="draw-warning"></div>
         </div>
       </section>
-
       <!-- 右側：中獎名單與操作 -->
       <section class="winners-section">
         <div class="card winners-card">
           <div class="winners-header">
             <h2>🏆 中獎名單</h2>
             <div class="winners-actions">
-              <button id="btn-export-csv" class="btn-sm btn-outline">匯出 CSV</button>
-              <button id="btn-reset-lottery" class="btn-sm btn-danger">重置紀錄</button>
+              <label for="export-prize-select">匯出範圍：</label>
+              <select id="export-prize-select" class="prize-select">
+                <option value="all">全部獎項</option>
+              </select>
+              <button id="btn-export-csv" class="btn-sm btn-outline">
+                匯出 CSV
+              </button>
+              <button id="btn-reset-lottery" class="btn-sm btn-danger">
+                重置紀錄
+              </button>
             </div>
           </div>
 
